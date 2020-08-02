@@ -1,7 +1,7 @@
 # Laureni's Portfolio
 
 # Homepage
-![](capture.PNG)
+![](Capture.PNG)
 
 ## Description:
 My professional portfolio featuring project details.
