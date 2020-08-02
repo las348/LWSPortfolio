@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/navtabs.css"
+import "./navtabs.css"
 
 
 function NavTabs(props) {
