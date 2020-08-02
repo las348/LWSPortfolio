@@ -1,13 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { CardDeck, Card } from 'react-bootstrap'
 import "./highlight.css"
 import movie from "../../../images/movie.png"
 import recipes from "../../../images/recipes.PNG"
 import weather from "../../../images/Weather.PNG"
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
 
-class Highlight extends Component {
-  render() {
-    return (
+
+const renderTooltip = props => (
+  <Tooltip {...props}>Deployed site</Tooltip>
+);
+
+
+const Highlight = () => (
+
       <div>
         <div className="row highlights">
           <div className="col-md">
@@ -22,10 +29,12 @@ class Highlight extends Component {
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                <a href="https://github.com/las348/moviegoat" target="_blank" class="link" rel="noopener noreferrer">
+                <a href="https://github.com/las348/moviegoat" target="_blank" className="link" rel="noopener noreferrer">
                 <i class="fa fa-github-square fa-2x"></i></a>
-                <a href="https://safe-earth-58672.herokuapp.com/" target="_blank" class="link" rel="noopener noreferrer">
-                <i class="fa fa-window-restore fa-2x"></i></a>
+                <OverlayTrigger placement="top" overlay={renderTooltip}>
+                <a href="https://safe-earth-58672.herokuapp.com/" target="_blank" className="link" rel="noopener noreferrer">
+                <i className="fa fa-window-restore fa-2x"></i></a>
+                </OverlayTrigger>
                 </Card.Footer>
               </Card>
               <Card>
@@ -38,10 +47,12 @@ class Highlight extends Component {
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                <a href="https://github.com/las348/Glova" target="_blank" class="link" rel="noopener noreferrer">
-                <i class="fa fa-github-square fa-2x"></i></a>
-                <a href="https://las348.github.io/Glova/" target="_blank" class="link" rel="noopener noreferrer">
-                <i class="fa fa-window-restore fa-2x"></i></a>
+                <a href="https://github.com/las348/Glova" target="_blank" className="link" rel="noopener noreferrer">
+                <i className="fa fa-github-square fa-2x"></i></a>
+                <OverlayTrigger placement="top" overlay={renderTooltip}>
+                <a href="https://las348.github.io/Glova/" target="_blank" className="link" rel="noopener noreferrer">
+                <i className="fa fa-window-restore fa-2x"></i></a>
+                </OverlayTrigger>
                 </Card.Footer>
               </Card>
               <Card>
@@ -54,10 +65,12 @@ class Highlight extends Component {
          </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                <a href="https://github.com/las348/APICons" target="_blank" class="link" rel="noopener noreferrer">
-                <i class="fa fa-github-square fa-2x"></i></a>
-                <a href="https://las348.github.io/APICons/" target="_blank" class="link" rel="noopener noreferrer">
-                <i class="fa fa-window-restore fa-2x"></i></a>
+                <a href="https://github.com/las348/APICons" target="_blank" className="link" rel="noopener noreferrer">
+                <i className="fa fa-github-square fa-2x"></i></a>
+                <OverlayTrigger placement="top" overlay={renderTooltip}>
+                <a href="https://las348.github.io/APICons/" target="_blank" className="link" rel="noopener noreferrer">
+                <i className="fa fa-window-restore fa-2x"></i></a>
+                </OverlayTrigger>
                 </Card.Footer>
               </Card>
             </CardDeck>
@@ -65,7 +78,5 @@ class Highlight extends Component {
         </div>
       </div>
     )
-  }
-}
 
-export default () => (<div><Highlight /></div>)
+export default Highlight;

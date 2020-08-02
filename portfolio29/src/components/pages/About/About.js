@@ -30,18 +30,18 @@ const About = () => (
               In my personal time I like to bake, ride my bike, and play Animal Crossing. Also, I have a BA in Italian
               literature from New York Univeristy so I love practicing my Italian whenever I can.
           </p>
-            <center>
+   
               <Card.Img variant="top" src={NYU} id="NYU" />
               <Card.Img variant="top" src={Rutgers} id="Rutgers" />
-            </center>
+          
           </Card.Body>
         </div>
       </div>
     </div>
 
-    <div>
+  
       <Footer />
-    </div>
+    
   </div>
 );
 

@@ -6,3 +6,7 @@
 .fa-github-square {
     margin-right: 10px;
 }
+
+.link:hover {
+    color: black;
+}

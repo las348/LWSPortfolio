@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 import "./home.css"
-import Highlight from "../HomeHighlights/Highlights";
+import Highlight from "../HomeHighlights/Highlights"
 import Footer from "../Footer/footer"
 
 const Home = () => (

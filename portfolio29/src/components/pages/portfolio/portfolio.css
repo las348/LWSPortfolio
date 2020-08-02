@@ -1,12 +1,13 @@
-.portfolio {
-    color: white;
-    margin-top: 50px;;
-}
-
 .secRow {
     margin-top: 50px;
 }
 
 h2 {
     text-align: center;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.title {
+    font-weight: 700;
 }

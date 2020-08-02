@@ -3,7 +3,6 @@ import NavTabs from "./NavTabs";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Portfolio from "./pages/portfolio/Portfolio";
-import Contact from "./pages/Contact";
 import "./container.css"
 
 
@@ -23,9 +22,7 @@ class PortfolioContainer extends Component {
       return <About />;
     } else if (this.state.currentPage === "Portfolio") {
       return <Portfolio />;
-    } else {
-      return <Contact />;
-    }
+    } 
   };
 
  
