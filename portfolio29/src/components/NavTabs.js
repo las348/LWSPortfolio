@@ -1,8 +1,10 @@
 import React from "react";
+import "../style/navtabs.css"
+
 
 function NavTabs(props) {
   return (
-    <ul className="nav nav-tabs">
+    <ul className="nav">
       <li className="nav-item">
         <a
           href="#home"
@@ -23,11 +25,11 @@ function NavTabs(props) {
       </li>
       <li className="nav-item">
         <a
-          href="#blog"
-          onClick={() => props.handlePageChange("Blog")}
-          className={props.currentPage === "Blog" ? "nav-link active" : "nav-link"}
+          href="#Portfolio"
+          onClick={() => props.handlePageChange("Portfolio")}
+          className={props.currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
         >
-          Blog
+          Portfolio
         </a>
       </li>
       <li className="nav-item">

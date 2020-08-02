@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import NavTabs from "./NavTabs";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Blog from "./pages/Blog";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Portfolio from "./pages/portfolio/Portfolio";
 import Contact from "./pages/Contact";
+import "./container.css"
 
-class Portfolio extends Component {
+
+class PortfolioContainer extends Component {
   state = {
     currentPage: "Home"
   };
@@ -19,16 +21,18 @@ class Portfolio extends Component {
       return <Home />;
     } else if (this.state.currentPage === "About") {
       return <About />;
-    } else if (this.state.currentPage === "Blog") {
-      return <Blog />;
+    } else if (this.state.currentPage === "Portfolio") {
+      return <Portfolio />;
     } else {
       return <Contact />;
     }
   };
 
+ 
+
   render() {
     return (
-      <div>
+      <div className="navContainer">
         <NavTabs
           currentPage={this.state.currentPage}
           handlePageChange={this.handlePageChange}
@@ -39,4 +43,4 @@ class Portfolio extends Component {
   }
 }
 
-export default Portfolio;
+export default PortfolioContainer;

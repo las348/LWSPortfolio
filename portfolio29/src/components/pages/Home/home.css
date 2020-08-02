@@ -1,0 +1,11 @@
+.homecontainer div{
+    background-image: url("./background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    color: white;
+    height: 500px;
+    text-align: center;
+    padding-top: 250px;
+}

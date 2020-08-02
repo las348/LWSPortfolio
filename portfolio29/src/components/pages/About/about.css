@@ -1,0 +1,18 @@
+.container {
+    color: rgba(255, 255, 255, 0.74);
+    margin: 50px;
+}
+
+.Laureni {
+    width: 25%;
+    padding: 50px 10px 10px 10px;
+    padding-right: 20px;
+    float: left;
+}
+
+#Rutgers {
+    width: 10%;
+}
+#NYU {
+    width: 15%;
+}
