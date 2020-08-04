@@ -1,5 +1,7 @@
 # Laureni's Portfolio
 
+[Deployed site](https://las348.github.io/LWSPortfolio/)
+
 # Homepage
 ![](Capture.PNG)
 
